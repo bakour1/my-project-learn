@@ -1,0 +1,47 @@
+
+html {
+  font-size: 13px;
+}
+
+@media (min-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body>.container {
+  overflow: hidden;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+/* =============== */
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">

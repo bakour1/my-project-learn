@@ -1,0 +1,221 @@
+/* 
+ */
+/* true and false
+  span.true,
+  span.false {
+    display: inline-block;
+    position: relative;
+  }
+
+  span.true::before,
+  span.true::after,
+  span.false::before,
+  span.false::after {
+    content: '';
+    display: inline-block;
+    background-color: #666666;
+    width: .23rem;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+  }
+
+  span.true::before {
+    height: .5rem;
+    transform: translate(-150%, -0%) rotate(-45deg);
+    -webkit-transform: translate(-150%, -0%) rotate(-45deg);
+    -moz-transform: translate(-150%, -0%) rotate(-45deg);
+    -ms-transform: translate(-150%, -0%) rotate(-45deg);
+    -o-transform: translate(-150%, -0%) rotate(-45deg);
+  }
+
+  span.true::after {
+    height: .8rem;
+    transform: translate(0%, 0%) rotate(45deg);
+    -webkit-transform: translate(0%, 0%) rotate(45deg);
+    -moz-transform: translate(0%, 0%) rotate(45deg);
+    -ms-transform: translate(0%, 0%) rotate(45deg);
+    -o-transform: translate(0%, 0%) rotate(45deg);
+  }
+
+  span.false::after,
+  span.false::before {
+    height: .9rem;
+  }
+
+  span.false::after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+
+  span.false::before {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+*/
+/* table public width column and border-column
+table {
+  width: 70%;
+  text-align: center;
+  border-collapse: collapse;
+  border: none;
+}
+
+tr {
+  display: flex;
+  width: 100%;
+}
+
+td,
+th {
+  flex: 1;
+  border-left: 1px solid #eee;
+  padding: 5px;
+}
+
+table td:first-child,
+table th:first-child {
+  flex: 0.8;
+  border-left: none;
+  color: #aaa;
+  font-size: 1.rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+*/
+/* aspect-ratio
+  .asspect-ratio {
+    --aspect-ratio: 16/9;
+    padding-bottom: calc(100%/(var(--aspect-ratio)));
+*/
+/* aspect ratio
+    aspect ratio  | padding-bottom value
+--------------|----------------------
+    16:9      |       56.25%
+    4:3       |       75%
+    3:2       |       66.66%
+    8:5       |       62.5%
+
+*/
+/* @media
+    
+.container {
+  margin-inline: auto;
+  }
+
+#small
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+#medium
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+#large
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+*/
+/* search
+  +++++++++++
+      <form class="search">
+        <input type="search" placeholder="search...">
+        <button type="submit">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </form>
+  +++++++++++
+  aside>form.search {
+  background-color: transparent;
+  width: 100%;
+  border: 2px solid #999;
+  padding-block: 0.6rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3.125rem;
+  -webkit-border-radius: 3.125rem;
+  -moz-border-radius: 3.125rem;
+  -ms-border-radius: 3.125rem;
+  -o-border-radius: 3.125rem;
+}
+
+aside>form.search button {
+  outline: none;
+  border: none;
+  padding-inline: 0.375rem;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: .625rem;
+}
+
+aside>form.search button ion-icon {
+  font-size: 20px;
+  vertical-align: top;
+  fill: #000;
+}
+
+aside>form.search input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #999;
+  padding-inline: 0.8rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+ */
+/* tags  
+  +++++++++++++++++++++++
+        <div class="tags">
+        <h3>tags</h3>
+        <span class="line-full"></span>
+        <div class="content">
+          <span>foods</span>
+          <span>cold drinks</span>
+          <span>snacks</span>
+          <span>coffee</span>
+          <span>lunch</span>
+          <span>breakfast</span>
+          <span>italian food</span>
+          <span>dinner</span>
+        </div>
+      </div>
+  ++++++++++++++++++++
+  aside .tags {
+  margin-block: 1.875rem;
+}
+
+aside .tags .content {
+  display: flex;
+  flex-flow: row wrap;
+  gap: .375rem;
+}
+
+aside .tags .content span {
+  display: block;
+  width: fit-content;
+  background-color: #eee;
+  padding: .5rem .625rem;
+  font-size: .875rem;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+*/
